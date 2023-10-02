@@ -4,13 +4,11 @@ function animateElement(element, property, value, duration) {
     targetElement.style[property] = value;
   }, duration);
 
-  // Clear the interval after the animation duration
   setTimeout(() => {
     clearInterval(animationInterval);
   }, duration);
 }
 
-// Define the animations
 animateElement(".female", "opacity", "1", 100);
 animateElement(".headline_1", "left", "0", 1000);
 animateElement(".female", "display", "none", 3000);
